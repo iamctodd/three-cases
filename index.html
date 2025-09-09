@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-3xl mx-auto p-6">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Problem-Solving Practice</h1>
+            <p class="text-gray-600">Real situations • Simple solutions • 20 minutes total</p>
+            <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                <p class="text-blue-700 text-sm"><strong>Instructions:</strong> Read each case below, then click "Respond to This Case" to share your thoughts. Complete them one at a time!</p>
+            </div>
+        </div>
+
+        <!-- Problem-Solving Guide -->
+        <div class="mb-6 p-4 bg-green-50 rounded-lg text-center">
+            <h3 class="font-semibold text-green-800 mb-2">Simple Problem-Solving Steps:</h3>
+            <div class="text-sm text-green-700 space-y-1">
+                <p><strong>1. Listen:</strong> What's really bothering people?</p>
+                <p><strong>2. Ask:</strong> What would make this better?</p>
+                <p><strong>3. Try:</strong> Start with the simplest solution</p>
+                <p><strong>4. Check:</strong> Is it working? If not, try something else!</p>
+            </div>
+        </div>
+
+        <!-- Case 1: Neighborhood Bakery -->
+        <div class="bg-white rounded-lg shadow-md border border-gray-200 mb-6 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 rounded-lg bg-blue-500 text-white">
+                        <i data-lucide="users" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Case 1: The Neighborhood Bakery</h3>
+                        <p class="text-sm text-gray-500">Daily Operations • 5 minutes</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4"></i>
+                            The Situation
+                        </h4>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            Betty runs a small bakery. Every morning she runs out of popular items too early, but has leftover pastries at closing time.
+                        </p>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-blue-800 mb-2">What We Know:</h5>
+                            <ul class="text-blue-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span>Small neighborhood bakery, open 6 AM - 4 PM</li>
+                                <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span>Popular items: Fresh bread, muffins, coffee cake</li>
+                                <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span>Problem: Sells out of bread by noon, throws away cookies daily</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-red-800 mb-2">The Problems:</h5>
+                            <ul class="text-red-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Customers disappointed when favorites are gone</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Wasting money on unsold items</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Hard to predict daily demand</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-3">Think About This:</h4>
+                            <div class="space-y-2">
+                                <p class="text-yellow-700 font-medium">1. What's the main problem here?</p>
+                                <p class="text-yellow-700 font-medium">2. What simple solution would you try first?</p>
+                                <p class="text-yellow-700 font-medium">3. How could Betty learn what customers really want?</p>
+                            </div>
+                            <div class="mt-4 p-3 bg-yellow-100 rounded border-l-4 border-yellow-400">
+                                <p class="text-yellow-800 font-medium">💡 Think like a customer - what would make you happy?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Form for Case 1 -->
+            <div class="response-section bg-blue-50 border-t border-blue-200">
+                <div class="response-header p-4 cursor-pointer hover:bg-blue-100 transition-colors" data-case="1">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 rounded-lg bg-blue-600 text-white">
+                                <i data-lucide="edit-3" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-800">Respond to This Case</h4>
+                                <p class="text-sm text-blue-600">Click to share your thoughts</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-right" class="response-expand-icon w-5 h-5 text-blue-600"></i>
+                    </div>
+                </div>
+                
+                <div class="response-content p-6" style="display: none;">
+                    <form name="bakery-response" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="bakery-response" />
+                        <input type="hidden" name="case-title" value="Case 1: The Neighborhood Bakery" />
+                        
+                        <div class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name (optional)</label>
+                                    <input type="text" name="participant-name" class="w-full p-2 border border-blue-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                                    <input type="date" name="session-date" class="w-full p-2 border border-blue-300 rounded-md">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">What's the main problem here?</label>
+                                <textarea name="main-problem" rows="3" class="w-full p-2 border border-blue-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">What simple solution would you try first?</label>
+                                <textarea name="simple-solution" rows="3" class="w-full p-2 border border-blue-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">How could Betty learn what customers really want?</label>
+                                <textarea name="customer-feedback" rows="3" class="w-full p-2 border border-blue-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
+                                    ✅ Submit Case 1 Response
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 2: Community Garden -->
+        <div class="bg-white rounded-lg shadow-md border border-gray-200 mb-6 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 rounded-lg bg-green-500 text-white">
+                        <i data-lucide="trending-up" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Case 2: The Community Garden</h3>
+                        <p class="text-sm text-gray-500">Group Problem-Solving • 5 minutes</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4"></i>
+                            The Situation
+                        </h4>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            The local community garden has 20 plots, but only 8 people are actively gardening. The unused plots are becoming weedy and attracting complaints.
+                        </p>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-green-800 mb-2">What We Know:</h5>
+                            <ul class="text-green-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-green-500 mt-1">•</span>20 garden plots available, only 8 being used</li>
+                                <li class="flex items-start gap-2"><span class="text-green-500 mt-1">•</span>Waiting list of 12 people who want to garden</li>
+                                <li class="flex items-start gap-2"><span class="text-green-500 mt-1">•</span>Current gardeners say plots are too big for them</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-red-800 mb-2">The Problems:</h5>
+                            <ul class="text-red-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Wasted space and resources</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>People want to join but can't</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Garden looks messy to neighbors</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-3">Think About This:</h4>
+                            <div class="space-y-2">
+                                <p class="text-yellow-700 font-medium">1. Why aren't all plots being used?</p>
+                                <p class="text-yellow-700 font-medium">2. What's a simple way to fit more people?</p>
+                                <p class="text-yellow-700 font-medium">3. How could the group make this decision together?</p>
+                            </div>
+                            <div class="mt-4 p-3 bg-yellow-100 rounded border-l-4 border-yellow-400">
+                                <p class="text-yellow-800 font-medium">💡 Sometimes the simplest solutions work best!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Form for Case 2 -->
+            <div class="response-section bg-green-50 border-t border-green-200">
+                <div class="response-header p-4 cursor-pointer hover:bg-green-100 transition-colors" data-case="2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 rounded-lg bg-green-600 text-white">
+                                <i data-lucide="edit-3" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-green-800">Respond to This Case</h4>
+                                <p class="text-sm text-green-600">Click to share your thoughts</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-right" class="response-expand-icon w-5 h-5 text-green-600"></i>
+                    </div>
+                </div>
+                
+                <div class="response-content p-6" style="display: none;">
+                    <form name="garden-response" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="garden-response" />
+                        <input type="hidden" name="case-title" value="Case 2: The Community Garden" />
+                        
+                        <div class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name (optional)</label>
+                                    <input type="text" name="participant-name" class="w-full p-2 border border-green-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                                    <input type="date" name="session-date" class="w-full p-2 border border-green-300 rounded-md">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-green-700 mb-1">Why aren't all plots being used?</label>
+                                <textarea name="plots-unused" rows="3" class="w-full p-2 border border-green-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-green-700 mb-1">What's a simple way to fit more people?</label>
+                                <textarea name="fit-more-people" rows="3" class="w-full p-2 border border-green-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-green-700 mb-1">How could the group make this decision together?</label>
+                                <textarea name="group-decision" rows="3" class="w-full p-2 border border-green-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
+                                    ✅ Submit Case 2 Response
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 3: Library Book Club -->
+        <div class="bg-white rounded-lg shadow-md border border-gray-200 mb-6 overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 rounded-lg bg-purple-500 text-white">
+                        <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Case 3: The Library Book Club</h3>
+                        <p class="text-sm text-gray-500">Communication Challenge • 5 minutes</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4"></i>
+                            The Situation
+                        </h4>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            The library book club used to have 15 regular members. Now only 5 people come to meetings. Members say they don't like the current book choices.
+                        </p>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-purple-800 mb-2">What We Know:</h5>
+                            <ul class="text-purple-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">•</span>Book club met monthly for 3 years</li>
+                                <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">•</span>Attendance dropped from 15 to 5 people</li>
+                                <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">•</span>Same person has picked books for 2 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-50 p-4 rounded-lg mb-4">
+                            <h5 class="font-medium text-red-800 mb-2">The Problems:</h5>
+                            <ul class="text-red-700 space-y-1">
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>People aren't coming anymore</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Current members feel unheard</li>
+                                <li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>Group might fall apart</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-3">Think About This:</h4>
+                            <div class="space-y-2">
+                                <p class="text-yellow-700 font-medium">1. What's really causing people to stop coming?</p>
+                                <p class="text-yellow-700 font-medium">2. How could everyone have a say in book choices?</p>
+                                <p class="text-yellow-700 font-medium">3. What would bring people back?</p>
+                            </div>
+                            <div class="mt-4 p-3 bg-yellow-100 rounded border-l-4 border-yellow-400">
+                                <p class="text-yellow-800 font-medium">💡 Listen first, then find solutions everyone can agree on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Form for Case 3 -->
+            <div class="response-section bg-purple-50 border-t border-purple-200">
+                <div class="response-header p-4 cursor-pointer hover:bg-purple-100 transition-colors" data-case="3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 rounded-lg bg-purple-600 text-white">
+                                <i data-lucide="edit-3" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-purple-800">Respond to This Case</h4>
+                                <p class="text-sm text-purple-600">Click to share your thoughts</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-right" class="response-expand-icon w-5 h-5 text-purple-600"></i>
+                    </div>
+                </div>
+                
+                <div class="response-content p-6" style="display: none;">
+                    <form name="bookclub-response" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="bookclub-response" />
+                        <input type="hidden" name="case-title" value="Case 3: The Library Book Club" />
+                        
+                        <div class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name (optional)</label>
+                                    <input type="text" name="participant-name" class="w-full p-2 border border-purple-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                                    <input type="date" name="session-date" class="w-full p-2 border border-purple-300 rounded-md">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-purple-700 mb-1">What's really causing people to stop coming?</label>
+                                <textarea name="people-leaving" rows="3" class="w-full p-2 border border-purple-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-purple-700 mb-1">How could everyone have a say in book choices?</label>
+                                <textarea name="book-choices" rows="3" class="w-full p-2 border border-purple-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-purple-700 mb-1">What would bring people back?</label>
+                                <textarea name="bring-back" rows="3" class="w-full p-2 border border-purple-300 rounded-md" placeholder="Type your thoughts..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
+                                    ✅ Submit Case 3 Response
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completion Message -->
+        <div class="text-center mt-8 p-4 bg-yellow-50 rounded-lg">
+            <p class="text-yellow-800"><strong>Great job!</strong> Complete as many cases as you'd like. Each response helps us understand your problem-solving approach.</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Auto-fill today's date for all forms
+        document.querySelectorAll('input[name="session-date"]').forEach(input => {
+            input.value = new Date().toISOString().split('T')[0];
+        });
+
+        // Handle form submissions
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '⏳ Sending...';
+                submitBtn.disabled = true;
+                
+                // Show success after submission
+                setTimeout(() => {
+                    submitBtn.innerHTML = '✅ Submitted!';
+                    submitBtn.classList.remove('hover:bg-blue-700', 'hover:bg-green-700', 'hover:bg-purple-700');
+                    submitBtn.classList.add('bg-gray-400');
+                }, 1000);
+            });
+        });
+
+        // Handle expand/collapse functionality for response forms
+        document.querySelectorAll('.response-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.parentElement.querySelector('.response-content');
+                const expandIcon = this.querySelector('.response-expand-icon');
+                
+                // Toggle content visibility
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                    expandIcon.setAttribute('data-lucide', 'chevron-down');
+                } else {
+                    content.style.display = 'none';
+                    expandIcon.setAttribute('data-lucide', 'chevron-right');
+                }
+                
+                // Re-initialize Lucide icons
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+</html>
